@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Conversão</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSV.css">
     <link rel="shortcut icon" type="imagex/png" href="img/icons8-matemática-16.png">
     
 </head>
 <body>
     <header>
+        <a class="convert" id="convert" href="index.html" target="_blank">Conversor Zrobot</a>
         <section>
             <div class="faixa_alta"></div>
         </section>
 
         <section>
-            <h3 id="titulo">Calculadora de Conversão</h3>
-            <p id="texto2">Converta para o valor do quilo, um produto precificado em gramas.</p>
+            <h3 id="titulo">Verficador São Vicente</h3>
+            <p id="texto2">Verifique se o valor atual está dentro dos 10% de diferença tolerados.</p>
         </section>
     </header>
 
     <main>
         <section class="conteudo">
-            <input class="valor1" id="valor1" type="number" value="preço" placeholder="Preço atual">
-            <input class="valor2" id="valor2" type="number" value="gramatura" placeholder="Valor em gramas">
-            <input class="gerador" id="gerador" type="button" value="Gerar" onclick="calcular()">
+            <input class="valor1" id="valor1" type="number" value="preço" placeholder="Valor">
+            <input class="soma" id="soma" type="button" value="+10%" onclick="calcularSoma()">
+            <input class="sub" id="sub" type="button" value="-10%" onclick="calcularSub()">
         </section>
         <section class="resultGeral">
         <div id="res" class="res">Resultado</div>
-        <button name="Copy" id="copy" onclick="copyText()">Copiar</button>
         </section>
     </main>
 
@@ -36,6 +36,6 @@
         <p>&copy; Anna Rossete</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="mainSV.js"></script>
 </body>
 </html>
