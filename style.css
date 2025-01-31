@@ -20,33 +20,13 @@ a {
     text-decoration: none;
 }
 
-.convert {
-    background-color: var(--backBut2);
-    box-shadow: var(--backSombra);
-
-    border: none;
-    border-radius: 5rem;
-
-    padding: .4rem;
-    margin: auto;
-
-    font-size: 1em;
-    color: white;
-    font-weight: 500;
-}
-
-.convert:hover {
-    background-color: var(--backHoverBut2);
-    transition: all .3s;
-}
-
 #titulo {
     display: flex;
     align-items: center;
     justify-content: center;
 
     color: white;
-    font-size: 2rem;
+    font-size: 4vh;
 }
 
 #texto2 {
@@ -112,7 +92,7 @@ main {
     width: 15vh;
     border-radius: 5vh;
     border: none;
-    font-size: 1rem;
+    font-size: 2vh;
 
     background-color: var(--backBut);
     box-shadow: var(--backSombra);
@@ -161,6 +141,7 @@ main {
     border: none;
     width: 15vh;
     height: 7vh;
+    font-size: 2vh;
 
     background-color: var(--backBut);
     box-shadow: var(--backSombra);
@@ -207,4 +188,28 @@ footer
     color: rgba(255, 255, 255, 0.473);
     text-align: center;
     font-style: italic;
+
+    margin: 5vh;
+}
+
+.convert {
+    background-color: var(--backBut2);
+    box-shadow: var(--backSombra);
+
+    border: none;
+    border-radius: 5vh;
+
+    padding: .4vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin: auto;
+
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 500;
+}
+
+.convert:hover {
+    background-color: var(--backHoverBut2);
+    transition: all .3s;
 }
