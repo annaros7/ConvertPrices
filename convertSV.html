@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador São Vicente</title>
     <link rel="stylesheet" href="styleSV.css">
-    <link rel="shortcut icon" type="imagex/png" href="img/icons8-matemática-16.png">
+    <link rel="shortcut icon" type="imagex/png" href="img/icons8-matemática-30.png">
     
 </head>
 <body>
     <header>
-        <a class="convert" id="convert" href="index.html" target="_blank">Conversor Zrobot</a>
         <section>
             <div class="faixa_alta"></div>
         </section>
@@ -23,16 +22,22 @@
 
     <main>
         <section class="conteudo">
-            <input class="valor1" id="valor1" type="number" value="preço" placeholder="Valor">
-            <input class="soma" id="soma" type="button" value="+10%" onclick="calcularSoma()">
-            <input class="sub" id="sub" type="button" value="-10%" onclick="calcularSub()">
+
+            <input class="valor1" id="valor1" type="number" value="preço" placeholder="Valor" onkeypress="calcularSomaSub()">
+
         </section>
         <section class="resultGeral">
-        <div id="res" class="res">Resultado</div>
+
+            <div class="bolinha1">+10%</div>
+            <div id="resSoma" class="res">Resultado</div>
+
+            <div class="bolinha2">-10%</div>
+            <div id="resSub" class="res">Resultado</div>
         </section>
     </main>
 
     <footer>
+        <a class="convert" id="convert" href="index.html" target="_blank">Conversor Zrobot</a>
         <p>&copy; Anna Rossete</p>
     </footer>
 
