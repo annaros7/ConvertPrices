@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Preços</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="imagex/png" href="img/icons8-matemática-16.png">
+    <link rel="shortcut icon" type="imagex/png" href="img/icons8-matemática-30.png">
     
 </head>
 <body>
     <header>
-        <a class="convert" id="convert" href="convertSV.html" target="_blank">Conversor São Vicente</a>
         <section>
             <div class="faixa_alta"></div>
         </section>
@@ -24,7 +23,7 @@
     <main>
         <section class="conteudo">
             <input class="valor1" id="valor1" type="number" value="preço" placeholder="Preço atual">
-            <input class="valor2" id="valor2" type="number" value="gramatura" placeholder="Valor em gramas">
+            <input class="valor2" id="valor2" type="number" value="gramatura" placeholder="Valor em gramas" onblur="calcular()">
             <input class="gerador" id="gerador" type="button" value="Gerar" onclick="calcular()">
         </section>
         <section class="resultGeral">
@@ -34,6 +33,7 @@
     </main>
 
     <footer>
+        <a class="convert" id="convert" href="convertSV.html" target="_blank">Verificador São Vicente</a>
         <p>&copy; Anna Rossete</p>
     </footer>
 
