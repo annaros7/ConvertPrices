@@ -20,33 +20,13 @@ a {
     text-decoration: none;
 }
 
-.convert {
-    background-color: var(--backBut2);
-    box-shadow: var(--backSombra);
-
-    border: none;
-    border-radius: 5rem;
-
-    padding: .4rem;
-    margin: auto;
-
-    font-size: 1em;
-    color: white;
-    font-weight: 500;
-}
-
-.convert:hover {
-    background-color: var(--backHoverBut2);
-    transition: all .3s;
-}
-
 #titulo {
     display: flex;
     align-items: center;
     justify-content: center;
 
     color: white;
-    font-size: 2rem;
+    font-size: 4vh;
 }
 
 #texto2 {
@@ -107,42 +87,6 @@ main {
     transition: all .2s;
 }
 
-.soma {
-    height: 7vh;
-    width: 15vh;
-    border-radius: 5vh;
-    border: none;
-    font-size: 1rem;
-
-    background-color: var(--backBut);
-    box-shadow: var(--backSombra);
-    color: white;
-}
-
-.sub {
-    height: 7vh;
-    width: 15vh;
-    border-radius: 5vh;
-    border: none;
-    font-size: 1rem;
-
-    background-color: var(--backBut);
-    box-shadow: var(--backSombra);
-    color: white;
-}
-
-.soma:hover {
-    background-color: var(--backHoverBut);
-    color: white;
-    transition: all .2s;
-}
-
-.sub:hover {
-    background-color: var(--backHoverBut);
-    color: white;
-    transition: all .2s;
-}
-
 .resultGeral {
     display: flex;
     justify-content: center;
@@ -153,10 +97,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin: 4vh;
     padding: 1vh;
+
     width: 50vh;
     height: 5vh;
+    min-width: 20vh;
 
     color: rgb(210, 210, 210);
     font-size: 2vh;
@@ -170,6 +117,27 @@ main {
 .res:hover {
     background-color: rgba(75, 75, 75, 0.495);
     transition: all .2s;
+}
+
+.bolinha1, .bolinha2{
+    background-color: var(--backBut);
+    width: 8.5vh;
+    height: 7vh;
+    min-width: 7vh;
+    /*min-width determina a largura minima*/
+    border-radius: 50vh;
+
+    position: relative;
+    left: 10vh;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 2vh;
+    font-weight: 500;
 }
 
 .conteudo:focus, input:focus {
@@ -207,4 +175,28 @@ footer
     color: rgba(255, 255, 255, 0.473);
     text-align: center;
     font-style: italic;
+
+    margin: 5vh;
+}
+
+.convert {
+    background-color: var(--backBut2);
+    box-shadow: var(--backSombra);
+
+    border: none;
+    border-radius: 5vh;
+
+    padding: .4vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin: auto;
+
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 500;
+}
+
+.convert:hover {
+    background-color: var(--backHoverBut2);
+    transition: all .3s;
 }
