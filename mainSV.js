@@ -1,25 +1,19 @@
-function calcularSoma() {
+function calcularSomaSub() {
     let v1 = document.getElementById('valor1');
     let gerar = document.getElementById('gerador');
-    let res = document.getElementById('res');
+    let resSoma = document.getElementById('resSoma');
+    let resSub = document.getElementById('resSub');
     let n1 = Number(v1.value);
 
-    let calculo = n1 + n1 * 0.1;
+    let calculoSoma = n1 + n1 * 0.1;
 
-    let varFinalArred = calculo.toFixed(2)
+    let varFinalArredSoma = calculoSoma.toFixed(2)
 
-    res.innerHTML = "R$" + varFinalArred;
-}
+    resSoma.innerHTML = "R$" + varFinalArredSoma;
 
-function calcularSub() {
-    let v1 = document.getElementById('valor1');
-    let gerar = document.getElementById('gerador');
-    let res = document.getElementById('res');
-    let n1 = Number(v1.value);
+    let calculoSub = n1 - n1 * 0.1;
 
-    let calculo = n1 - n1 * 0.1;
+    let varFinalArredSub = calculoSub.toFixed(2)
 
-    let varFinalArred = calculo.toFixed(2)
-
-    res.innerHTML = "R$" + varFinalArred;
+    resSub.innerHTML = "R$" + varFinalArredSub;
 }
